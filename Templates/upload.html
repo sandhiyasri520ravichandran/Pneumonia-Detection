@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Upload X-ray Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light pastel background */
+            color: #333;
+        }
+        header {
+            background-color: #ffabab; /* Pastel red */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 2.5em;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+        }
+        .content h2 {
+            font-size: 2em;
+            color: #ff6f61; /* Pastel coral */
+            margin-bottom: 20px;
+        }
+        .upload-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 100%;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+            border: 2px solid #ff6f61; /* Pastel coral border */
+            border-radius: 5px;
+            padding: 10px;
+            width: calc(100% - 20px);
+        }
+        .btn {
+            background-color: #ff6f61; /* Pastel coral */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ff5f50; /* Darker coral */
+        }
+        footer {
+            background-color: #ffabab; /* Pastel red */
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pneumonia Detection System</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Upload Your X-ray Image</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+                <input type="file" name="xray" accept="image/*" required>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pneumonia Detection. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

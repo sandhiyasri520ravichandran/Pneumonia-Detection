@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pneumonia Detection System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Bright colors */
+            color: #333;
+        }
+        header {
+            background-color: #ff6b6b; /* Bright pastel red */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: white;
+            font-size: 2.5em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #6bcb77; /* Bright pastel green */
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .hero h2 {
+            font-size: 2.2em;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #fff;
+        }
+        .btn {
+            background-color: #ff6b6b; /* Bright pastel coral */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4b4b; /* Darker coral */
+        }
+        .overview {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .overview div {
+            background-color: #f7d06c; /* Light pastel yellow */
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+        }
+        .overview h4 {
+            color: #333;
+        }
+        footer {
+            background-color: #ff6b6b; /* Bright pastel red */
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pneumonia Detection System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="symptoms.html">Symptoms</a></li>
+                <li><a href="diagnosis.html">Diagnosis</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="upload.html" class="btn">Upload X-ray</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Detect Pneumonia Early</h2>
+            <p>Your health is our priority. Learn how to detect pneumonia and seek treatment promptly.</p>
+            <a href="upload.html" class="btn">Upload Your X-ray</a>
+        </section>
+
+        <section class="overview">
+            <h3>Overview</h3>
+            <div>
+                <h4>Symptoms</h4>
+                <p>Learn about the symptoms of pneumonia.</p>
+                <a href="symptoms.html" class="btn">Read More</a>
+            </div>
+            <div>
+                <h4>Diagnosis</h4>
+                <p>Understand how pneumonia is diagnosed.</p>
+                <a href="diagnosis.html" class="btn">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pneumonia Detection. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
